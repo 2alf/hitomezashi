@@ -45,7 +45,7 @@ function Generate()
 function DrawX(x,y,num,startStitch)
 {
   startStitch = startStitch % 2;  // bin: odd == 1 , ev == 0 returns bool
-  stroke(225, 0, 0);
+  stroke(222, 0, 0);
   for( let i=0; i < num; i++ )
   {
     if(i % 2 == startStitch)
@@ -61,7 +61,7 @@ function DrawX(x,y,num,startStitch)
 function DrawY(x, y, num, startStitch)
 {
   startStitch = startStitch % 2;
-  stroke(225,0,0);
+  stroke(222,0,0);
   for( let i=0; i < num; i++ )
   {
     if(i % 2 == startStitch)
