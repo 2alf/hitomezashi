@@ -14,7 +14,7 @@ let promptY = "31415926535897932384626433832795028841971693993751058209749445923
 // start pixels
 let startY = 0;
 let startX = 0;
-
+//void
 function setup() 
 {
   createCanvas(windowWidth, windowHeight);
@@ -27,8 +27,7 @@ function draw()
   Generate();
 }
 
-
-function Generate()
+function Generate() // main def
 {
   for( let i=0; i<=h; i++)
   {
@@ -42,7 +41,7 @@ function Generate()
   }
 }
 
-function DrawX(x,y,num,startStitch)
+function DrawX(x,y,num,startStitch) // start stiching in x ax through binary
 {
   startStitch = startStitch % 2;  // bin: odd == 1 , ev == 0 returns bool
   stroke(222, 0, 0);
@@ -56,9 +55,7 @@ function DrawX(x,y,num,startStitch)
   }
 }
 
-// same thing but y ax
-
-function DrawY(x, y, num, startStitch)
+function DrawY(x, y, num, startStitch) // same thing but y ax
 {
   startStitch = startStitch % 2;
   stroke(222,0,0);
